@@ -45,7 +45,7 @@ body {
     justify-content: space-between;
     align-items: center;
     min-width:100%;
-    transform: translateY(-90px);
+    transform: translateY(-100px);
 }
 .head .network{
     display:flex;
