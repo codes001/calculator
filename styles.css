@@ -97,3 +97,10 @@ body {
     left: 0;
     right: 0;
 }
+
+@media(max-width:768px){
+    .head{
+        transform: translateY(-90px);
+
+    }
+}
