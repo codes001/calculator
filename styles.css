@@ -1,0 +1,99 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #ccc;
+    font-family: 'SF Pro Display' sans-serif;
+}
+
+.container {
+    position: relative;
+    background-color: #02213a;
+    max-width: 45%;
+    margin: 0 auto;
+    height: 470px;
+    border-radius: 10px;
+    padding: 3%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.numbers {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    justify-content: center;
+    row-gap: 30px;
+    align-items: center;
+    column-gap: 10px;
+    max-width: 80%;
+    margin: 0 auto;
+    transform: translateY(50px);
+}
+.head{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width:100%;
+    transform: translateY(-90px);
+}
+.head .network{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.head .network *{
+   margin:0 0.4rem;
+}
+.mode-toggler {
+    transform: translateY(-40px);
+    font-size: 1.7rem;
+    min-width: 30%;
+    margin: 0 auto;
+    background-color: #022844;
+    color: #f4f4f4;
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.mode-toggler:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+
+.container .box {
+    width: 20px;
+    height: 20px;
+    background-color: #022844;
+    padding: 0.5rem 1rem;
+    border-radius: 10px;
+    transition: all 0.3s ease-in;
+}
+.container .box:hover {
+    background-color: #02213a;
+    box-shadow: 3px 3px 2px #022844, -3px -3px 2px #022844;
+}
+
+.x-bar {
+    width: 70px;
+    height: 2px;
+    color: red;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+}
