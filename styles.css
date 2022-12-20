@@ -10,6 +10,7 @@
 body {
     background-color: #ccc;
     font-family: 'SF Pro Display' sans-serif !important;
+    -moz-font-family: 'SF Pro Display' sans-serif !important;
 }
 .wrapper {
     display: flex;
@@ -87,6 +88,8 @@ body {
     text-align: center;
     background-color: inherit;
     padding: 0.5rem 1rem;
+    align-self: center;
+    justify-self: center;
     border-radius: 50px;
     transition: all 0.3s ease-in;
     cursor: pointer;
