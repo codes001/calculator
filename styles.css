@@ -10,6 +10,8 @@
 body {
     background-color: #ccc;
     font-family: 'SF Pro Display' sans-serif;
+}
+.wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -76,6 +78,7 @@ body {
 .container.light-mode{
     background-color: #f4f4f4;
     color: #022844;
+    box-shadow: 3px 3px 4px #aaa, -3px -3px 4px #aaa;
 }
 
 .container .box {
@@ -83,15 +86,19 @@ body {
     height: 16px;
     background-color: #022844;
     padding: 0.5rem 1rem;
-    border-radius: 10px;
+    border-radius: 50px;
     transition: all 0.3s ease-in;
+}
+.box.light-mode{
+    background-color: #aaa;
+    color: #022844;
 }
 .container.light-mode{
     background-color: #ccc;
     color:#022844
 }
 .mode-toggler.light-mode {
-    background-color: #ccc;
+    background-color: #aaa;
     color: #022844;
 }
 .container .box:hover {
