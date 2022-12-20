@@ -10,16 +10,18 @@
 body {
     background-color: #ccc;
     font-family: 'SF Pro Display' sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
     position: relative;
     background-color: #02213a;
-    max-width: 300px;
-    margin: 0 auto;
-    height: 470px;
+    max-width: 300px;    
+    height: 500px;
     border-radius: 10px;
-    padding: 3%;
+    padding: 5%;
     color: #fff;
     display: flex;
     justify-content: center;
@@ -36,7 +38,7 @@ body {
     row-gap: 30px;
     align-items: center;
     column-gap: 10px;
-    max-width: 80%;
+    max-width: 90%;
     margin: 0 auto;
     transform: translateY(50px);
 }
@@ -45,7 +47,7 @@ body {
     justify-content: space-between;
     align-items: center;
     min-width:100%;
-    transform: translateY(-110px);
+    transform: translateY(-100px);
 }
 .head .network{
     display:flex;
@@ -54,48 +56,47 @@ body {
 }
 
 .head .network *{
-   margin:0 0.4rem;
+   margin:0 0.3rem;
 }
 .mode-toggler {
-    transform: translateY(-40px);
+    transform: translateY(-80px);
     font-size: 1.7rem;
-    min-width: 30%;
     margin: 0 auto;
     background-color: #022844;
     color: #f4f4f4;
-    padding: 0.8rem 1rem;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    padding: 1rem 1.4rem;
+    border-radius: 50%;
+    text-align: center;
 }
 
 .mode-toggler:hover{
     cursor: pointer;
     opacity: 0.9;
 }
+.container.light-mode{
+    background-color: #f4f4f4;
+    color: #022844;
+}
 
 .container .box {
-    width: 20px;
-    height: 20px;
+    width: 16px;
+    height: 16px;
     background-color: #022844;
     padding: 0.5rem 1rem;
     border-radius: 10px;
     transition: all 0.3s ease-in;
 }
+.container.light-mode{
+    background-color: #ccc;
+    color:#022844
+}
+.mode-toggler.light-mode {
+    background-color: #ccc;
+    color: #022844;
+}
 .container .box:hover {
     background-color: #02213a;
     box-shadow: 3px 3px 2px #022844, -3px -3px 2px #022844;
-}
-
-.x-bar {
-    width: 70px;
-    height: 2px;
-    color: red;
-    position: absolute;
-    bottom: 10px;
-    left: 0;
-    right: 0;
 }
 
 @media(max-width:768px){
