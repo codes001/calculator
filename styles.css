@@ -9,7 +9,7 @@
 
 body {
     background-color: #ccc;
-    font-family: 'SF Pro Display' sans-serif;
+    font-family: 'SF Pro Display' sans-serif !important;
 }
 .wrapper {
     display: flex;
@@ -110,5 +110,10 @@ body {
     .head{
         transform: translateY(-90px);
 
+    }
+    body{
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 }
