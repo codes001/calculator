@@ -84,15 +84,18 @@ body {
 .container .box {
     width: 16px;
     height: 16px;
-    background-color: #022844;
+    text-align: center;
+    background-color: inherit;
     padding: 0.5rem 1rem;
     border-radius: 50px;
     transition: all 0.3s ease-in;
+    cursor: pointer;
+    box-shadow: 2px 2px 2px #022844, -2px -2px 2px #022844;
 }
-.box.light-mode{
+.box.light-mode:hover{
     background-color: #aaa;
     color: #022844;
-}
+} 
 .container.light-mode{
     background-color: #ccc;
     color:#022844
@@ -101,10 +104,7 @@ body {
     background-color: #aaa;
     color: #022844;
 }
-.container .box:hover {
-    background-color: #02213a;
-    box-shadow: 3px 3px 2px #022844, -3px -3px 2px #022844;
-}
+
 
 @media(max-width:768px){
     .head{
