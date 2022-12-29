@@ -21,7 +21,8 @@ body {
 .container {
     position: relative;
     background-color: #02213a;
-    max-width: 300px;    
+    /* max-width: 350px;     */
+    width: 20%;
     height: 500px;
     border-radius: 10px;
     padding: 5%;
@@ -82,24 +83,26 @@ body {
     box-shadow: 3px 3px 4px #aaa, -3px -3px 4px #aaa;
 }
 
-.container .box {
+button {
     width: 16px;
     height: 16px;
     text-align: center;
     background-color: inherit;
-    padding: 0.5rem 1rem;
-    align-self: center;
-    justify-self: center;
+    border:0;
+    color: #f4f4f4;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 50px;
     transition: all 0.3s ease-in;
     cursor: pointer;
-    box-shadow: 2px 2px 2px #022844, -2px -2px 2px #022844;
+    box-shadow: 1px 1px 1px #333, -1px -1px 1px #333;
 }
-.box.light-mode:hover{
-    background-color: #aaa;
-    color: #022844;
+button:focus{
+    transform: scale(0.9);
 } 
-.container.light-mode{
+.container.light-mode, button.light-mode{
     background-color: #ccc;
     color:#022844
 }
@@ -110,13 +113,11 @@ body {
 
 
 @media(max-width:768px){
-    .head{
-        transform: translateY(-90px);
-
+    .container {
+        width: 50%;
     }
-    body{
-        display: flex;
-        align-items: center;
-        justify-content: center;
+    .numbers{
+        max-width: 100%;
+        gap: 30px;
     }
 }
